@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,5 +77,39 @@ namespace Gestion_Hospital1
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            // Obtener el nombre de usuario y la contraseña ingresados por el usuario
+            string username = txtuser.Text;
+            string password = txtpass.Text;
+
+            // Leer los datos de usuario del archivo JSON
+            List<Usuarios> usuarios = Json.ReadJSON<List<Usuarios>>("usuarios.json");
+
+            // Verificar si el nombre de usuario y la contraseña coinciden con los datos del archivo JSON
+            foreach (Usuarios usuario in usuarios)
+            {
+                if (usuario.Username == username && usuario.Password == password)
+                {
+                    MessageBox.Show("Inicio de sesión exitoso");
+                    // Aquí puedes realizar acciones adicionales después del inicio de sesión exitoso
+                    return;
+                }
+            }
+
+            // Si no se encuentra una coincidencia, mostrar un mensaje de error
+            MessageBox.Show("Inicio de sesión fallido. Usuario o contraseña incorrectos.");
+        }
+        public static class Json
+        {
+            // Método para leer datos del archivo JSON
+            public static T ReadJSON<T>(string filename)
+            {
+                string jsonData = File.ReadAllText(filename);
+                return JsonConvert.DeserializeObject<T>(jsonData);
+            }
+        }
+
     }
 }
