@@ -13,6 +13,7 @@ using iTextSharp.text;
 using System.IO;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
+using Gestion_Hospital1;
 
 namespace Proyecto
 {
@@ -107,6 +108,13 @@ namespace Proyecto
             //row.Cells["Importe"].Value = decimal.Parse(txtcantidad.Text) * decimal.Parse(txtprecio.Text);
             row.Cells["Importe"].Value = decimal.Parse(txtprecio.Text);
 
+        }
+
+        private void atras_Click(object sender, EventArgs e)
+        {
+            categoria form4 = new categoria();
+            form4.Show();
+            this.Hide();
         }
     }
 }

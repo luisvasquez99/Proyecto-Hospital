@@ -78,6 +78,13 @@ namespace Gestion_Hospital1
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           categoria form4 = new categoria();
+            form4.Show();
+            this.Hide();
+        }
     }
 }
     

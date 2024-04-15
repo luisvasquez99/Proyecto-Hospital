@@ -40,7 +40,7 @@
             // 
             // txtuser
             // 
-            this.txtuser.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtuser.BackColor = System.Drawing.Color.White;
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuser.ForeColor = System.Drawing.Color.Black;
@@ -57,7 +57,7 @@
             // 
             // txtpass
             // 
-            this.txtpass.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtpass.BackColor = System.Drawing.Color.White;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass.ForeColor = System.Drawing.Color.Black;

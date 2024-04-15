@@ -95,8 +95,8 @@ namespace Gestion_Hospital1
                 if (usuario.Username == username && usuario.Password == password)
                 {
                     MessageBox.Show("Inicio de sesión exitoso");
-                   citas form2 = new citas();
-                    form2.Show();
+                  categoria form4 = new categoria();
+                    form4.Show();
                     this.Hide();
                     return;
                 }

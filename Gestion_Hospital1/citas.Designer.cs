@@ -20,6 +20,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(citas));
             this.txtel = new System.Windows.Forms.TextBox();
             this.tELEFONO = new System.Windows.Forms.Label();
             this.btndescargar3 = new System.Windows.Forms.Button();
@@ -37,11 +38,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtindicacion = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtel
             // 
-            this.txtel.Location = new System.Drawing.Point(464, 104);
+            this.txtel.Location = new System.Drawing.Point(459, 113);
             this.txtel.Name = "txtel";
             this.txtel.Size = new System.Drawing.Size(47, 20);
             this.txtel.TabIndex = 144;
@@ -49,7 +51,7 @@
             // tELEFONO
             // 
             this.tELEFONO.AutoSize = true;
-            this.tELEFONO.Location = new System.Drawing.Point(410, 109);
+            this.tELEFONO.Location = new System.Drawing.Point(405, 118);
             this.tELEFONO.Name = "tELEFONO";
             this.tELEFONO.Size = new System.Drawing.Size(49, 13);
             this.tELEFONO.TabIndex = 143;
@@ -70,7 +72,7 @@
             // 
             // textrefe
             // 
-            this.textrefe.Location = new System.Drawing.Point(156, 68);
+            this.textrefe.Location = new System.Drawing.Point(151, 77);
             this.textrefe.Name = "textrefe";
             this.textrefe.Size = new System.Drawing.Size(126, 20);
             this.textrefe.TabIndex = 141;
@@ -78,7 +80,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 68);
+            this.label6.Location = new System.Drawing.Point(16, 77);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(134, 13);
             this.label6.TabIndex = 140;
@@ -87,7 +89,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(301, 70);
+            this.label8.Location = new System.Drawing.Point(296, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 13);
             this.label8.TabIndex = 138;
@@ -95,7 +97,7 @@
             // 
             // txtrecep
             // 
-            this.txtrecep.Location = new System.Drawing.Point(402, 68);
+            this.txtrecep.Location = new System.Drawing.Point(397, 77);
             this.txtrecep.Name = "txtrecep";
             this.txtrecep.Size = new System.Drawing.Size(126, 20);
             this.txtrecep.TabIndex = 139;
@@ -103,7 +105,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 32);
+            this.label1.Location = new System.Drawing.Point(16, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 129;
@@ -112,7 +114,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(299, 35);
+            this.label2.Location = new System.Drawing.Point(294, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 13);
             this.label2.TabIndex = 132;
@@ -120,14 +122,14 @@
             // 
             // txtnombremedico
             // 
-            this.txtnombremedico.Location = new System.Drawing.Point(156, 32);
+            this.txtnombremedico.Location = new System.Drawing.Point(151, 41);
             this.txtnombremedico.Name = "txtnombremedico";
             this.txtnombremedico.Size = new System.Drawing.Size(126, 20);
             this.txtnombremedico.TabIndex = 130;
             // 
             // txtnombrepas
             // 
-            this.txtnombrepas.Location = new System.Drawing.Point(156, 100);
+            this.txtnombrepas.Location = new System.Drawing.Point(151, 109);
             this.txtnombrepas.Name = "txtnombrepas";
             this.txtnombrepas.Size = new System.Drawing.Size(126, 20);
             this.txtnombrepas.TabIndex = 136;
@@ -135,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 102);
+            this.label4.Location = new System.Drawing.Point(16, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 13);
             this.label4.TabIndex = 134;
@@ -143,14 +145,14 @@
             // 
             // txtclinica
             // 
-            this.txtclinica.Location = new System.Drawing.Point(402, 32);
+            this.txtclinica.Location = new System.Drawing.Point(397, 41);
             this.txtclinica.Name = "txtclinica";
             this.txtclinica.Size = new System.Drawing.Size(126, 20);
             this.txtclinica.TabIndex = 131;
             // 
             // txtedad
             // 
-            this.txtedad.Location = new System.Drawing.Point(341, 102);
+            this.txtedad.Location = new System.Drawing.Point(336, 111);
             this.txtedad.Name = "txtedad";
             this.txtedad.Size = new System.Drawing.Size(47, 20);
             this.txtedad.TabIndex = 137;
@@ -158,7 +160,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(303, 107);
+            this.label5.Location = new System.Drawing.Point(298, 116);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 135;
@@ -167,7 +169,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 144);
+            this.label3.Location = new System.Drawing.Point(7, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 13);
             this.label3.TabIndex = 128;
@@ -175,17 +177,29 @@
             // 
             // txtindicacion
             // 
-            this.txtindicacion.Location = new System.Drawing.Point(137, 141);
+            this.txtindicacion.Location = new System.Drawing.Point(132, 150);
             this.txtindicacion.Multiline = true;
             this.txtindicacion.Name = "txtindicacion";
             this.txtindicacion.Size = new System.Drawing.Size(391, 114);
             this.txtindicacion.TabIndex = 133;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(485, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 32);
+            this.button1.TabIndex = 145;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // citas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 450);
+            this.ClientSize = new System.Drawing.Size(525, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtel);
             this.Controls.Add(this.tELEFONO);
             this.Controls.Add(this.btndescargar3);
@@ -229,5 +243,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtindicacion;
+        private System.Windows.Forms.Button button1;
     }
 }
