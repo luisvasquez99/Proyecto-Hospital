@@ -40,7 +40,7 @@ namespace Gestion_Hospital1
         }
     }
 
-    public class User
+    public class Usuarios
     {
         public string Username { get; set; }
         public string Password { get; set; }
