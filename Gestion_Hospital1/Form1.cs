@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using Gestion_Hospital1.Gestion_Hospital1;
+using Newtonsoft.Json;
+using Proyecto;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -93,13 +95,16 @@ namespace Gestion_Hospital1
                 if (usuario.Username == username && usuario.Password == password)
                 {
                     MessageBox.Show("Inicio de sesión exitoso");
-                    // Aquí puedes realizar acciones adicionales después del inicio de sesión exitoso
+                   Medicina form2 = new Medicina();
+                    form2.Show();
+                    this.Hide();
                     return;
                 }
             }
 
             // Si no se encuentra una coincidencia, mostrar un mensaje de error
             MessageBox.Show("Inicio de sesión fallido. Usuario o contraseña incorrectos.");
+
         }
         public static class Json
         {

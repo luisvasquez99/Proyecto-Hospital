@@ -40,10 +40,10 @@
             // 
             // txtuser
             // 
-            this.txtuser.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtuser.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtuser.ForeColor = System.Drawing.Color.Black;
             this.txtuser.Location = new System.Drawing.Point(19, 62);
             this.txtuser.Margin = new System.Windows.Forms.Padding(2);
             this.txtuser.Name = "txtuser";
@@ -57,10 +57,10 @@
             // 
             // txtpass
             // 
-            this.txtpass.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtpass.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtpass.ForeColor = System.Drawing.Color.Black;
             this.txtpass.Location = new System.Drawing.Point(19, 139);
             this.txtpass.Margin = new System.Windows.Forms.Padding(2);
             this.txtpass.Name = "txtpass";
